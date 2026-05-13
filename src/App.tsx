@@ -3,6 +3,7 @@ import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFun
 // import * as http2 from "node:http2";
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
+import Layout from "./components/Layout";
 
 // type PropsA = {
 //   title: string,
@@ -56,9 +57,29 @@ function App() {
       {/*<FunctionalComponent />*/}
       {/*<ClassComponent />*/}
       {/*<ArrowFunctionalComponent />*/}
-      <ArrowFunctionalComponentWithProps title="Heading 1"/>
-      <ArrowFunctionalComponentWithProps title="Second Title" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et eveniet id iste odit rem sequi tenetur totam ut, voluptas.
-"/>
+
+
+      {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
+      {/*<ArrowFunctionalComponentWithProps*/}
+      {/*  title="Second Title"*/}
+      {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et eveniet id iste odit rem sequi tenetur totam ut, voluptas.*/}
+      {/*"/>*/}
+
+      {/*LESSON THREE*/}
+      {/*<Layout title="Heading 1">*/}
+      {/*  <ArrowFunctionalComponentWithProps*/}
+      {/*    title="Second Title"*/}
+      {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et eveniet id iste odit rem sequi tenetur totam ut, voluptas.*/}
+      {/*  "/>*/}
+      {/*</Layout>*/}
+
+      <Layout>
+        <ArrowFunctionalComponentWithProps
+          title="Second Title"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo in nobis odio voluptatibus?</p>
+      </Layout>
     </>
   )
 }
