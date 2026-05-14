@@ -4,6 +4,7 @@
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 import Layout from "./components/Layout";
+import Counter from "./components/LessonFour/Counter.tsx";
 
 // type PropsA = {
 //   title: string,
@@ -73,12 +74,18 @@ function App() {
       {/*  "/>*/}
       {/*</Layout>*/}
 
-      <Layout addClasses="text-blue-600 bg-gray-100">
-        {/*<ArrowFunctionalComponentWithProps*/}
-        {/*  title="Second Title"*/}
-        {/*  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
-        {/*/>*/}
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reiciendis.</p>
+      {/*<Layout addClasses="bg-gray-50">*/}
+      {/*  <ArrowFunctionalComponentWithProps*/}
+      {/*    title="Second Title"*/}
+      {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet, deserunt dicta excepturi fugit ipsa modi perferendis quo repellat voluptates."*/}
+      {/*  />*/}
+      {/*  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reiciendis.</p>*/}
+      {/*  <Counter/>*/}
+      {/*</Layout>*/}
+
+      {/*LESSON FOUR*/}
+      <Layout addClasses="bg-gray-50">
+        <Counter/>
       </Layout>
     </>
   )
