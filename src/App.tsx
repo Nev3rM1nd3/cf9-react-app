@@ -5,6 +5,7 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 import Layout from "./components/Layout";
 import Counter from "./components/LessonFour/Counter.tsx";
+import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
 // type PropsA = {
 //   title: string,
@@ -86,6 +87,7 @@ function App() {
       {/*LESSON FOUR*/}
       <Layout addClasses="bg-gray-50">
         <Counter/>
+        <ClassCounter/>
       </Layout>
     </>
   )
