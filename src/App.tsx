@@ -6,7 +6,8 @@
 import Layout from "./components/Layout";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
-import NameChanger from "./components/LessonFive/NameChanger.tsx";
+// import NameChanger from "./components/LessonFive/NameChanger.tsx";
+import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -96,7 +97,8 @@ function App() {
 
       {/*LESSON FIVE*/}
       <Layout addClasses="bg-gray-50">
-        <NameChanger/>
+        {/*<NameChanger/>*/}
+        <CounterWithCustomHook/>
       </Layout>
     </>
   )
