@@ -12,7 +12,8 @@ import Layout from "./components/Layout";
 // import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
 // import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
 // import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
-import WindowSize from "./components/LessonSix/WindowSize.tsx";
+// import WindowSize from "./components/LessonSix/WindowSize.tsx";
+import FocusInput from "./components/LessonSix/FocusInput.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -124,7 +125,8 @@ function App() {
     <Layout addClasses="bg-gray-50">
       {/*<AutoRedirect/>*/}
       {/*<AutoRedirectAdvanced/>*/}
-      <WindowSize/>
+      {/*<WindowSize/>*/}
+      <FocusInput/>
     </Layout>
   </>
 
