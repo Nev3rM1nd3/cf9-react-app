@@ -9,7 +9,8 @@ import Layout from "./components/Layout";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
 // import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
 // import {useEffect} from "react";
-import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+// import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -110,13 +111,21 @@ function App() {
       {/*</Layout>*/}
 
       {/*LESSON FIVE*/}
-      <Layout addClasses="bg-gray-50">
-        {/*<NameChanger/>*/}
-        {/*<CounterWithCustomHook/>*/}
-        <NameChangerWithTitle/>
-      </Layout>
-    </>
-  )
+    {/*  <Layout addClasses="bg-gray-50">*/}
+    {/*    /!*<NameChanger/>*!/*/}
+    {/*    /!*<CounterWithCustomHook/>*!/*/}
+    {/*    <NameChangerWithTitle/>*/}
+    {/*  </Layout>*/}
+    {/*</>*/}
+
+    {/*LESSON SIX*/}
+    <Layout addClasses="bg-gray-50">
+      <AutoRedirect/>
+    </Layout>
+  </>
+
+
+)
 }
 
 export default App
