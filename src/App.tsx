@@ -11,7 +11,8 @@ import Layout from "./components/Layout";
 // import {useEffect} from "react";
 // import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
 // import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
-import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
+// import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
+import WindowSize from "./components/LessonSix/WindowSize.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -122,7 +123,8 @@ function App() {
     {/*LESSON SIX*/}
     <Layout addClasses="bg-gray-50">
       {/*<AutoRedirect/>*/}
-      <AutoRedirectAdvanced/>
+      {/*<AutoRedirectAdvanced/>*/}
+      <WindowSize/>
     </Layout>
   </>
 
