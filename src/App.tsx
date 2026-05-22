@@ -3,8 +3,16 @@
 // import * as http2 from "node:http2";
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
-import Layout from "./components/Layout";
-import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+// import Layout from "./components/Layout";
+// import PreviousValue from "./components/LessonSix/PreviousValue.tsx";
+// import {useEffect} from "react";
+import {Route, Routes} from "react-router";
+import NameChanger from "./components/LessonFive/NameChanger.tsx";
+import HomePage from "./pages/HomePage.tsx";
+import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+import Counter from "./components/LessonFour/Counter.tsx";
+// import Layout from "./components/Layout.tsx";
+import RouterLayout from "./components/RouterLayout.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
@@ -74,6 +82,10 @@ function App() {
   //   }
   //   ,[])
 
+  // useEffect(() => {
+  //   history.pushState({}, "",  "/about");
+  // }, []);
+
   return (
     <>
       {/*<FunctionalComponent />*/}
@@ -123,13 +135,53 @@ function App() {
     {/*</>*/}
 
     {/*LESSON SIX*/}
-    <Layout addClasses="bg-gray-50">
-      {/*<AutoRedirect/>*/}
-      {/*<AutoRedirectAdvanced/>*/}
-      {/*<WindowSize/>*/}
-      {/*<FocusInput/>*/}
-      <PreviousValue/>
-    </Layout>
+    {/*<Layout addClasses="bg-gray-50">*/}
+    {/*  /!*<AutoRedirect/>*!/*/}
+    {/*  /!*<AutoRedirectAdvanced/>*!/*/}
+    {/*  /!*<WindowSize/>*!/*/}
+    {/*  /!*<FocusInput/>*!/*/}
+    {/*  <PreviousValue/>*/}
+    {/*</Layout>*/}
+
+  {/*    LESSON SEVEN  */}
+  {/*    <Routes>*/}
+  {/*      <Route index element={<HomePage />} />*/}
+  {/*      /!*<Route path="/" element={<HomePage />}/>*!/*/}
+  {/*      <Route path="name-changer" element={<NameChanger />} />*/}
+  {/*      <Route path="counter" element={<Counter />} />*/}
+  {/*      <Route path="counter-advanced" element={<CounterAdvanced />} />*/}
+
+  {/*    </Routes>*/}
+
+      {/*<Layout>*/}
+
+      <Routes>
+        <Route element={<RouterLayout/>}>
+          <Route index element={<HomePage />} />
+          <Route path="examples">
+            <Route path="name-changer" element={<NameChanger />} />
+            <Route path="counter" element={<Counter />} />
+            <Route path="counter-advanced" element={<CounterAdvanced />} />
+          </Route>
+        </Route>
+
+        {/*<Route path="users">*/}
+        {/*  <Route index element={<UserListPage />} />*/}
+        {/*  <Route path=":userId" element={<UserPage />} />*/}
+        {/*</Route>*/}
+
+        {/*/files*/}
+        {/*  /files/*   */}
+        {/*<Route path="files/*" element={<File />} />*/}
+        {/*let params = useParams();*/}
+        {/*let filepath = params["*"]*/}
+
+        {/*<Route path="*" element={<NotFoundPage />} />    // Πρέπει να είναι στο τέλος αλλιώς δεν πιάνει τα υπόλοιπα components*/}
+
+
+      </Routes>
+
+      {/*</Layout>*/}
   </>
 
 
