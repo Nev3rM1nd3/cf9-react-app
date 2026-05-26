@@ -43,9 +43,9 @@ const MultiFieldFormWithZod   = () => {
     // valid -> {success: true, data: validatedData}
     // invalid -> {success: false, error: ZodError}
 
+    console.log(result);
     if (!result.success) {
       const newErrors: FormErrors = {};
-      console.log(result.error.issues);
       result.error.issues.forEach((issue) => {
         const fieldName = issue.path[0] as keyof FormValues;
         newErrors[fieldName] = issue.message;
@@ -75,9 +75,8 @@ const MultiFieldFormWithZod   = () => {
 
     const isValid = validateForm();
     if (isValid) {
-      setValues(values);
-      setErrors(errors);
-      setSubmittedData(null);
+      setSubmittedData(values);
+      setValues(initialValues);
     }
 
     // setSubmittedData(values);
