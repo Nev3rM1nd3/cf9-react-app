@@ -19,6 +19,7 @@ import MultiFieldForm from "./components/LessonNine/MultiFieldForm.tsx";
 import MultiFieldFormWithValidation from "./components/LessonNine/MultiFieldFormWithValidation.tsx";
 import MultiFieldFormWithZod from "./components/LessonTen/MultiFieldFormWithZod.tsx";
 import MultiFieldFormWithHookForm from "./components/LessonTen/MultiFieldFormWithHookForm.tsx";
+import ProductListPage from "./pages/ProductListPage.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
@@ -188,6 +189,10 @@ function App() {
           <Route path="multifield-form-zod" element={<MultiFieldFormWithZod/>}/>
           <Route path="multifield-form-hook-form" element={<MultiFieldFormWithHookForm/>}/>
 
+          <Route path="products">
+            <Route index element={<ProductListPage />} />
+            {/*<Route path=":productId" element={<ProductPage/>} />*/}
+          </Route>
 
         </Route>
         {/*/files*/}
